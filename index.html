@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand left-margin-100" href="#"><img src="./assets/logo.png" width="150" class="top-margin-small"></a>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 right-margin-100">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="d-flex flex-column flex-shrink-0 p-3 mb-2 bg-primary text-white" style="width: 280px;">
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">
+                  <img class="bi me-2" width="16" height="16" src="./assets/white-pie-line-graph.png">
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <img class="bi me-2" width="16" height="16" src="./assets/white-hotel.png">
+                  Facility
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                    <img class="bi me-2" width="16" height="16" src="./assets/white-user-multiple-female-group.png">
+                  Occupants
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                    <img class="bi me-2" width="16" height="16" src="./assets/road-direction-icon-13960.png">
+                  Houses
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                    <img class="bi me-2" width="16" height="16" src="./assets/white-cash-payment-bill.png">
+                  Collections
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                    <img class="bi me-2" width="16" height="16" src="./assets/white-megaphone.png">
+                  Messages
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div>
+          <h2>Create Your Facility</h2>
+          <p>To get started you need to create a facility</p>
+          <div class="text-center">
+            <img src="..." class="rounded" alt="...">
+            <a href="">upload</a>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+            <label class="form-check-label" for="inlineRadio1">Association</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Commercial</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">Residential</label>
+          </div>
+          <p>You run an association of residents and typically collect facility/service charges from them.</p>
+        </div>
+
+        <form class="row g-3">
+          <div class="row">
+            <div class="col">
+              <label for="inputEmail4" class="form-label">Name of Association*</label>
+              <input type="text" class="form-control" aria-label="Name of Association">
+            </div>
+            <div class="col">
+              <label for="inputEmail4" class="form-label">Website</label>
+              <input type="text" class="form-control" aria-label="Website">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Phone Number 1*</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+
+    </main>
+</body>
+</html>
